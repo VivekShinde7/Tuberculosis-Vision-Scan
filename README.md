@@ -1,4 +1,4 @@
-# Adenocarcinoma-Cancer-Detection
+# Tuberculosis-Vision-Scan
 
 ### Workflows
 1. update config.yaml
