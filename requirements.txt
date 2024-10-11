@@ -3,6 +3,7 @@ pandas
 gdown
 dvc
 mlflow==2.2.2
+dagshub
 notebook
 numpy
 matplotlib
