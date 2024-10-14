@@ -2,13 +2,16 @@ import tensorflow as tf
 from pathlib import Path
 import mlflow
 import mlflow.keras
+import dagshub
 from urllib.parse import urlparse
 from cnnClassifier.utils.common import read_yaml, create_directories, save_json
 from cnnClassifier.entity.config_entity import EvaluationConfig
 
+
 class Evaluation:
     def __init__(self, config: EvaluationConfig):
         self.config = config
+        dagshub.init(repo_owner='VivekShinde7', repo_name='Tuberculosis-Vision-Scan', mlflow=True)
 
     
     def _valid_generator(self):
